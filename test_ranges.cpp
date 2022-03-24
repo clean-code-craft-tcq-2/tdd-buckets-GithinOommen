@@ -3,8 +3,9 @@
 #include "test/catch.hpp"
 #include "ranges.h"
 /*Reading checkRange */
+int feedback=0;
 TEST_CASE("Read No of samples from 1-5 range")
 {
 
- checkRange(1,5);
+ feedback=checkRange(1,5);
 }
