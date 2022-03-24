@@ -15,13 +15,13 @@ int Samples[8] = {3, 3, 5, 4, 10, 11, 12, 13};
   {
           int i=0,count=0;
           int samplesno=CountSamples();
-   while(i<samplesno)
+   for(i=0;i<samplesno;++i)
    {
           if((LowLimit<=Samples[i])&& (HighLimit>=Samples[i]))
           {
                   count++;
           }
-          ++i;
+         
    }
    return count;
   }
