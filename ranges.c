@@ -1,10 +1,10 @@
 #include "ranges.h"
 
 
-  int checkRange(int LowLimit, int HighLimit, int* Samples)
+  int checkRange(int LowLimit, int HighLimit, int samplesno, int* Samples)
   {
           int i=0,count=0;
-   while(i<Samples)
+   while(i<samplesno)
    {
          /* if((LowLimit<=Samples[i])&& (HighLimit>=Samples[i]))
           {
