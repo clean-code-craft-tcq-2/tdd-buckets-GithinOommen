@@ -4,7 +4,7 @@
   int checkRange(int LowLimit, int HighLimit, int* Samples)
   {
           int i=0,count=0;
-   while(i<NoOfSamples)
+   while(i<Samples)
    {
          /* if((LowLimit<=Samples[i])&& (HighLimit>=Samples[i]))
           {
