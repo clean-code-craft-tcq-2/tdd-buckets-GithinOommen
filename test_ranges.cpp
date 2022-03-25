@@ -9,4 +9,5 @@ TEST_CASE("Read No of samples from 1-5 range")
 
  //feedback=checkRange(1,5);
  REQUIRE(checkRange(1, 5) == 4);
+ REQUIRE(checkRange(1, 2) == 0);
 }
