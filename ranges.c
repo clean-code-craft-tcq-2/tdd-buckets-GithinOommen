@@ -6,10 +6,6 @@
           int i=0,count=0;
    while(i<samplesno)
    {
-         /* if((LowLimit<=Samples[i])&& (HighLimit>=Samples[i]))
-          {
-                  count++;
-          }*/
           if(checkRangelimit(LowLimit,HighLimit,i,Samples))
           {
                   count++;
