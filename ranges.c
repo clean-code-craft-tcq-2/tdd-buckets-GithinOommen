@@ -1,9 +1,7 @@
 #include "ranges.h"
 
-int Samples[8] = {3, 3, 5, 4, 10, 11, 12, 13};
-  int NoOfSamples=sizeof(Samples)/sizeof(Samples[0]);
-  
-  int checkRange(int LowLimit, int HighLimit)
+
+  int checkRange(int LowLimit, int HighLimit, int* Samples)
   {
           int i=0,count=0;
    while(i<NoOfSamples)
@@ -12,7 +10,7 @@ int Samples[8] = {3, 3, 5, 4, 10, 11, 12, 13};
           {
                   count++;
           }*/
-          if(checkRangelimit(LowLimit,HighLimit,i))
+          if(checkRangelimit(LowLimit,HighLimit,i,Samples))
           {
                   count++;
           }
@@ -24,7 +22,7 @@ int Samples[8] = {3, 3, 5, 4, 10, 11, 12, 13};
    }
    return count;
   }
-  int checkRangelimit(int LowLimit, int HighLimit, int index)
+  int checkRangelimit(int LowLimit, int HighLimit, int index, int* Samples)
   {
          return((LowLimit<=Samples[index])&& (HighLimit>=Samples[index]));
           
